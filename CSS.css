@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: rgba(160, 57, 57, 0.913);
+}
+
+h1  {
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
+
+
+.container .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container .img-container .img {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+.container .img-container .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container .img-container .img img:hover {
+    transform: scale(1.1);
+}
+
+.caption {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.container .img-container .img .caption {
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для подписи */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    position: absolute; /* Позиционируем относительно .img */
+    bottom: 0; /* Размещение текста внизу .img */
+    left: 0;
+    right: 0;
+    padding: 10px; /* Отступы вокруг текста */
+}
+
+.container .pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.container .pop-up img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 8px;
+    max-width: 700px;
+    max-height: 80%;
+}
+
+.container .pop-up span {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* Center the footer */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Optional: Add a background color for better readability */
+    color: white; /* Optional: Set text color */
+    padding: 10px; /* Optional: Add padding for spacing */
+}
+
+
